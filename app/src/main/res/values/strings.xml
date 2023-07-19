@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name" translatable="false">مكتبي</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="search" translatable="false">بحث</string>
+    <string name="sort_by_high_priority" translatable="false">ترتيب بالأعلى أهمية</string>
+    <string name="delete_all" translatable="false">حذف الكل</string>
+    <string name="enter_task" translatable="false">إضافة قضية جديدة</string>
+    <string name="add" translatable="false">إضافة</string>
+    <string name="update" translatable="false">تعديل</string>
+    <string name="بحث" translatable="false" />
+    <string name="due_date" translatable="false" />
+    <string name="create_task" translatable="false" />
+    <string name="enter_task_information" translatable="false" />
+    <string name="اشعار" translatable="false" />
+    <string name="tasks_to_do" translatable="false" />
+    <string-array name="priorities">
+        <item>حكم</item>
+        <item>مؤجلة</item>
+    </string-array>
+    <string-array name="typeOfStations">
+        <item>إقتصادي</item>
+        <item>استئناف إقتصادي</item>
+        <item>مدني جزئي</item>
+        <item>مدني كلي</item>
+        <item>تجاري</item>
+        <item>مدني مستأنف</item>
+        <item>استئناف عالي</item>
+        <item>قضاء إداري</item>
+        <item>جنح</item>
+        <item>جنح مستئنف</item>
+        <item>لجنة</item>
+        <item>خبراء</item>
+    </string-array>
+
+    <string-array name="Stations">
+        <item>أول أسيوط</item>
+        <item>ثاني أسيوط</item>
+        <item>مركز أسيوط</item>
+        <item>ديروط</item>
+        <item>منفلوط</item>
+        <item>قوصية</item>
+        <item>الفتح</item>
+        <item>أبنوب</item>
+        <item>أبوتيج</item>
+        <item>صدفا</item>
+        <item>الغنايم</item>
+        <item>الساحل</item>
+        <item>البداري</item>
+        <item>إقتصادي</item>
+
+    </string-array>
+    <string name="title_activity_main2" translatable="false">MainActivity2</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+    <string name="action_settings" translatable="false">Settings</string>
+
+    <string name="menu_home" translatable="false">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="add_category">Add Category</string>
+    <string name="enter_category">Enter Category</string>
+    <string name="category_color">Category Color</string>
+    <string name="add_color">Add Color</string>
+    <string name="categories">Categories</string>
+    <string name="completed">Completed</string>
+    <string name="priority">Priority</string>
+    <string name="low">Low</string>
+    <string name="medium">Medium</string>
+    <string name="high">High</string>
+    <string name="category">Category</string>
+    <string name="add_new_category">+ Add New Category</string>
+    <string name="new_task">New Task</string>
+    <string name="settings">Settings</string>
+    <string name="notification">Notification</string>
+    <string name="low_priority_tasks">Low priority tasks</string>
+    <string name="medium_priority_tasks">Medium priority tasks</string>
+    <string name="high_priority_tasks">High priority tasks</string>
+    <string name="general">General</string>
+    <string name="rate_the_app">Rate the app</string>
+    <string name="completed_tasks" />
+    <string name="sherif">sherif</string>
+    <string name="abdo">abdo</string>
+</resources>

@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    >
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"
+            tools:context=".ui.add.AddFragment"
+            android:background="@color/white"
+            android:id="@+id/addid"
+            android:orientation="vertical"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:context=".ui.add.AddFragment"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/textView22222222222222222222"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="اسم الخصم"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black"
+                    />
+                <EditText
+
+                    android:id="@+id/updateEdtVsname"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:ems="10"
+                    android:padding="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+
+                    android:background="@drawable/backshap"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="12dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:context=".ui.add.AddFragment"
+                android:background="@color/white"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/textView222222"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="اسم الضامن"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black"
+                    />
+
+                <EditText
+                    android:id="@+id/updateEdtname"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:ems="10"
+                    android:padding="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+
+                    android:background="@drawable/backshap"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="12dp"
+                    />
+            </LinearLayout>
+
+     <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+         android:orientation="horizontal"
+    android:layout_gravity="center"
+         android:gravity="center"
+         >
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:layout_weight="1"
+             android:layout_gravity="right"
+             android:orientation="vertical"
+             >
+             <TextView
+                 android:id="@+id/textView2"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="نوع المحكمة"
+                 android:layout_gravity="center"
+                 android:layout_marginLeft="20dp"
+                 android:layout_marginRight="20dp"
+
+                 android:layout_marginTop="15dp"
+                 android:textColor="@color/black"
+                 />
+
+             <Spinner
+                 android:id="@+id/updateSpinnerTypeOFstations"
+                 android:layout_width="wrap_content"
+                 android:layout_height="40dp"
+                 android:layout_gravity="center"
+                 android:layout_marginTop="4dp"
+
+                 android:gravity="center"
+                 android:layout_marginLeft="20dp"
+                 android:layout_marginRight="20dp"
+
+                 android:backgroundTint="@color/black"
+                 android:entries="@array/typeOfStations"
+                 android:outlineAmbientShadowColor="@color/black"
+                 android:shadowColor="@color/black"
+                 android:textColor="@color/black"
+                 android:textColorHint="@color/black"
+                 android:textSize="4dp"
+                 />
+         </LinearLayout>
+
+         <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="right"
+                android:orientation="vertical"
+
+                >
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="اسم المحكمة"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+
+                    android:layout_marginTop="15dp"
+
+                    android:textColor="@color/black"
+
+                    />
+
+                <Spinner
+                    android:id="@+id/updateSpinnerStations"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_height="40dp"
+
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+
+                    android:backgroundTint="@color/black"
+                    android:entries="@array/Stations"
+                    android:outlineAmbientShadowColor="@color/black"
+                    android:shadowColor="@color/black"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="6dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:context=".ui.add.AddFragment"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/textView222222222222222222222"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="صفة البنك"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/black"
+                    />
+                <EditText
+                    android:id="@+id/updateEdtDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:ems="10"
+                    android:padding="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/backshap"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="12dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:context=".ui.add.AddFragment"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/textView22222222222222222222222"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="رقم القضية"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/black"
+                    />
+                <EditText
+                    android:id="@+id/updateEdtNumberofCase"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:ems="10"
+                    android:padding="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/backshap"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="12dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:context=".ui.add.AddFragment"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/textView2222222222222222222222"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="رقم الدائرة"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/black"
+                    />
+
+                <EditText
+                    android:id="@+id/updateEdtNumberOfCircle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:ems="10"
+                    android:padding="2dp"                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="12dp"
+                    android:background="@drawable/backshap"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textView2222222222222222222"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="موضوع الدعوى"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                />
+            <EditText
+                android:id="@+id/updateEdtSubject"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:padding="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/backshap"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="12dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/dateAndTimePickerUpdate1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="تاريخ الجلسة"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    app:chipIcon="@drawable/ic_baseline_date_range_24"
+                    />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textView222222222222"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الفرع"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:id="@+id/updateEdtcenter"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:padding="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/backshap"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="12dp"
+                />
+            <TextView
+                android:id="@+id/textView2222222222"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الرقم التعريفي"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:id="@+id/updateEdtnumberofdif"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:padding="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+
+                android:background="@drawable/backshap"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="12dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+                    <EditText
+                        android:id="@+id/updateEdtNote"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:ems="10"
+
+                        android:background="@drawable/backshap"
+                        android:layout_gravity="right"
+                        android:hint="ملاحظات"
+                        android:padding="5dp"
+                        android:gravity="right"
+                        android:textSize="10sp"
+
+                        android:textColorHint="@color/black"
+                        android:visibility="visible"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"   />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="2"
+
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_gravity="center"
+                        android:text="قرار الجلسة"
+                        android:gravity="center"
+                        android:layout_marginRight="8dp"
+                        android:textColor="@color/black"
+                        />
+
+
+                    <Spinner
+                        android:id="@+id/updateSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_margin="4dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:backgroundTint="#D1000000"
+                        android:entries="@array/priorities"
+                        android:outlineAmbientShadowColor="@color/black"
+                        android:shadowColor="#D1000000"
+                        android:textColor="#D1000000"
+                        android:textColorHint="#D1000000"
+                        android:textSize="6dp"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                >
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnUpdateAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/backshapeadd"
+                    android:text="إضافة جلسة جديدة"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="15dp"
+                    android:padding="6dp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/backshapeadd"
+                    android:text="مسح"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnUpdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/backlogin"
+                    android:text="تعديل"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</layout>
+

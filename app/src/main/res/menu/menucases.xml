@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+
+    <item
+        android:title="عرض المتداول"
+        android:id="@+id/List2menu"
+
+        />
+    <item android:title="عرض المحكوم"
+        android:id="@+id/taskmenu"
+        />
+
+</menu>

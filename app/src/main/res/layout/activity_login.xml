@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+android:background="@drawable/moo"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".log"
+android:padding="15dp"
+
+
+    android:orientation="vertical">
+
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="35dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:src="@drawable/dr"
+android:layout_gravity="center"
+            android:layout_marginRight="12dp"
+
+
+            />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="50dp"
+            android:textStyle="bold"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="0dp"
+            android:text="د/محمد عيد المحامي"
+            android:textSize="25dp"
+            android:textColor="#E8DBDB"
+            />
+
+
+    </LinearLayout>
+
+
+<TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:layout_gravity="start"
+
+    android:layout_marginTop="40dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+       android:text="اسم المستخدم"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+
+        />
+    <EditText
+        android:id="@+id/ed_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+android:background="@drawable/backshap"
+        android:layout_margin="10dp"
+          android:layout_gravity="left"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:shadowRadius="5"
+        android:padding="5dp"
+        />
+
+<TextView
+    android:layout_gravity="start"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+
+       android:text="كلمة السر"
+    android:textSize="25dp"
+    android:textColor="@color/white"
+
+    />
+    <EditText
+        android:id="@+id/ed_pass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="end"
+
+        android:background="@drawable/backshap"
+        android:layout_margin="10dp"
+        android:inputType="textPassword"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:shadowRadius="5"
+        android:padding="5dp"
+        />
+
+
+
+</LinearLayout>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="تسجيل الدخول"
+            android:textSize="25dp"
+        android:background="@drawable/backlogin"
+            android:textColor="@color/black"
+            />
+
+
+</LinearLayout>
+
+
+
+</ScrollView>

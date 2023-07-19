@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/taskFragment"
+        android:name="com.android.kotlinmvvmtodolist.ui.task.TaskFragment"
+        android:label="أحكام"
+        tools:layout="@layout/fragment_task"
+        >
+        <action
+            android:id="@+id/action_taskFragment_to_addFragment"
+            app:destination="@id/addFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_taskFragment_to_updateFragment"
+            app:destination="@id/updateFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"
+            />
+        <action
+            android:id="@+id/action_taskFragment_to_home2"
+            app:destination="@id/home2" />
+        <action
+            android:id="@+id/action_taskFragment_to_list2"
+            app:destination="@id/list2" />
+        <action
+            android:id="@+id/action_taskFragment_to_taskFragment2"
+            app:destination="@id/taskFragment2" />
+        <action
+            android:id="@+id/action_taskFragment_to_homeTasks"
+            app:destination="@id/homeTasks" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.android.kotlinmvvmtodolist.ui.add.AddFragment"
+        android:label="إضافة قضية جديدة"
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/action_addFragment_to_taskFragment"
+            app:destination="@id/taskFragment"
+            app:enterAnim="@anim/from_left"
+
+            app:exitAnim="@anim/to_right"
+            app:popUpTo="@id/taskFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_addFragment_to_home2"
+            app:destination="@id/home2" />
+        <action
+            android:id="@+id/action_addFragment_to_list2"
+            app:destination="@id/list2" />
+        <action
+            android:id="@+id/action_addFragment_to_taskFragment2"
+            app:destination="@id/taskFragment2" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/updateFragment"
+        android:name="com.android.kotlinmvvmtodolist.ui.update.UpdateFragment"
+        android:label="تعديل القضية"
+        tools:layout="@layout/fragment_update" >
+        <action
+            android:id="@+id/action_updateFragment_to_taskFragment"
+            app:destination="@id/taskFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popUpTo="@id/taskFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="task"
+            app:argType="com.android.kotlinmvvmtodolist.data.local.TaskEntry" />
+        <action
+            android:id="@+id/action_updateFragment_to_list2"
+            app:destination="@id/list2" />
+        <action
+            android:id="@+id/action_updateFragment_to_home2"
+            app:destination="@id/home2" />
+        <action
+            android:id="@+id/action_updateFragment_to_taskFragment2"
+            app:destination="@id/taskFragment2" />
+        <action
+            android:id="@+id/action_updateFragment_to_home22"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.android.kotlinmvvmtodolist.Home"
+        android:label="الصفحة الرئيسية"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_taskFragment"
+            app:destination="@id/taskFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"
+
+            />
+        <action
+            android:id="@+id/action_home2_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_home2_to_list2"
+            app:destination="@id/list2"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"
+
+            />
+        <action
+            android:id="@+id/action_home2_to_updateFragment"
+            app:destination="@id/updateFragment" />
+        <action
+            android:id="@+id/action_home2_to_taskFragment2"
+            app:destination="@id/taskFragment2" />
+        <action
+            android:id="@+id/action_home2_to_homeTasks"
+            app:destination="@id/homeTasks" />
+    </fragment>
+    <fragment
+        android:id="@+id/list2"
+        android:name="com.android.kotlinmvvmtodolist.List2"
+        android:label="متداول"
+        tools:layout="@layout/fragment_list2" >
+        <action
+            android:id="@+id/action_list2_to_home2"
+            app:destination="@id/home2"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"
+            />
+        <action
+            android:id="@+id/action_list2_to_taskFragment"
+            app:destination="@id/taskFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"
+            />
+        <action
+            android:id="@+id/action_list2_to_addFragment"
+            app:destination="@id/addFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_list2_to_updateFragment"
+            app:destination="@id/updateFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"
+
+            />
+        <action
+            android:id="@+id/action_list2_to_taskFragment2"
+            app:destination="@id/taskFragment2"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"
+
+            />
+        <action
+            android:id="@+id/action_list2_to_homeTasks"
+            app:destination="@id/homeTasks" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/taskFragment2"
+        android:name="com.android.kotlinmvvmtodolist.TaskFragment2"
+        android:label="جميع القضايا لنفس رقم القضية"
+        tools:layout="@layout/fragment_task2" >
+        <action
+            android:id="@+id/action_taskFragment2_to_updateFragment"
+            app:destination="@id/updateFragment" />
+        <action
+            android:id="@+id/action_taskFragment2_to_taskFragment"
+            app:destination="@id/taskFragment" />
+        <argument
+            android:name="task"
+            app:argType="com.android.kotlinmvvmtodolist.data.local.TaskEntry" />
+        <action
+            android:id="@+id/action_taskFragment2_to_list2"
+            app:destination="@id/list2" />
+        <action
+            android:id="@+id/action_taskFragment2_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_taskFragment2_to_home2"
+            app:destination="@id/home2" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/homeTasks"
+        android:name="com.android.kotlinmvvmtodolist.homeTasks"
+        android:label="fragment_home_tasks"
+        tools:layout="@layout/fragment_home_tasks" >
+        <action
+            android:id="@+id/action_homeTasks_to_list2"
+            app:destination="@id/list2" />
+        <action
+            android:id="@+id/action_homeTasks_to_taskFragment"
+            app:destination="@id/taskFragment" />
+        <action
+            android:id="@+id/action_homeTasks_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+</navigation>

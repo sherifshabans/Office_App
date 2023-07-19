@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+
+    <item android:title="عرض الكل"
+        android:icon="@drawable/ic_list_24"
+       android:id="@+id/alltask"
+        />
+
+    <item android:title="الإشعارات"
+        android:icon="@drawable/ic_notifications"
+        android:id="@+id/notifMenu"/>
+
+    <item
+        android:title="إضافة قضية جديدة"
+        android:icon="@drawable/ic_add"
+        android:id="@+id/addmenu"
+
+        />
+<item android:id="@+id/idList"
+    android:icon="@drawable/ic_not_done"
+    android:title="متداول"
+/><item android:id="@+id/idList2"
+    android:icon="@drawable/ic_done"
+    android:title="أحكام"
+/>
+
+</menu>
