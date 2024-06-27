@@ -10,6 +10,8 @@ A program for the work of the lawyer, which is an addition to cases, storing the
 - **Kotlin:** Developed entirely in *Kotlin*, the codebase benefits from the conciseness and expressiveness of the language, promoting efficient and readable code.
 - **MVVM Design Pattern:** The application structure is organized following the *MVVM* design pattern, promoting separation of concerns and facilitating maintainability.
 - **Room:** *Room* is used for local data storage, providing a reliable and efficient way to manage app-related data.
+-**Notifications:** The app incorporates push notifications to keep users informed about the latest updates, promotions, and order statuses, enhancing user engagement and retention.
+
 
 
 ## Images From The App
